@@ -3,20 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
+    <title>Meu Blog - Universo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #e0e0e0;
+            background: #0a0a12;
+            background-image: 
+                radial-gradient(ellipse at top, #1a1a2e 0%, #0a0a12 70%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(100, 80, 255, 0.25);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.4rem;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            font-size: 1.35rem;
+            font-weight: 400;
+            opacity: 0.9;
+            color: #c4b5fd;
+        }
+
+        header p {
+            margin-top: 0.9rem;
+            font-size: 0.95rem;
+            opacity: 0.7;
+        }
+
+        main {
+            background: rgba(20, 20, 35, 0.85);
+            padding: 2.2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        main p {
+            margin-bottom: 1.2rem;
+            font-size: 1.15rem;
+        }
+
+        .imagem {
+            margin: 1.8rem 0;
+            text-align: center;
+        }
+
+        .imagem img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(120, 80, 255, 0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: #a0a0b0;
+            margin-top: 0.6rem;
+            font-style: italic;
+        }
+
+        h3 {
+            color: #c4b5fd;
+            margin: 1.8rem 0 0.8rem;
+            font-size: 1.3rem;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Meu Blog</h1>
+            <h2>Explorando o Universo</h2>
+            <p>Autor: Gui</p>
+        </header>
 
-    <header>
-        <h1>Meu Blog</h1>
-        <h2>Meu Primeiro Post</h2>
-        <p>Autor: Gui</p>
-    </header>
+        <main>
+            <p>Bem-vindo ao meu blog!</p>
+            <p>Este é o meu primeiro post. Aqui vou compartilhar ideias, aprender HTML e criar novas páginas — começando pelo universo e seus mistérios mais profundos.</p>
 
-    <main>
-        <p>Bem-vindo ao meu blog!</p>
-        <p>Este é o meu primeiro post. Aqui vou compartilhar ideias, aprender HTML e criar novas páginas.</p>
-    </main>
+            <h3>O primeiro buraco negro fotografado</h3>
+            <p>Em 2019, a colaboração Event Horizon Telescope (com apoio da NASA) capturou a primeira imagem real de um buraco negro: o supermassivo no centro da galáxia M87, a 55 milhões de anos-luz de distância.</p>
 
+            <div class="imagem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_3.jpg/800px-Black_hole_-_Messier_87_crop_3.jpg" 
+                     alt="Primeira imagem de um buraco negro - M87*">
+                <p class="legenda">M87* — a primeira imagem direta de um buraco negro (Event Horizon Telescope / NASA)</p>
+            </div>
+
+            <h3>O buraco negro no centro da Via Láctea</h3>
+            <p>Em 2022, o mesmo projeto revelou a imagem de Sagittarius A*, o buraco negro supermassivo no coração da nossa própria galáxia.</p>
+
+            <div class="imagem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/EHT_Saggitarius_A_black_hole.jpg/800px-EHT_Saggitarius_A_black_hole.jpg" 
+                     alt="Buraco negro Sagittarius A*">
+                <p class="legenda">Sagittarius A* — o buraco negro no centro da Via Láctea (Event Horizon Telescope)</p>
+            </div>
+
+            <h3>O universo profundo</h3>
+            <p>O Hubble Ultra Deep Field mostra milhares de galáxias em um pedacinho do céu, algumas formadas há mais de 13 bilhões de anos.</p>
+
+            <div class="imagem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Hubble_ultra_deep_field_high_rez_edit1.jpg/800px-Hubble_ultra_deep_field_high_rez_edit1.jpg" 
+                     alt="Hubble Ultra Deep Field">
+                <p class="legenda">Hubble Ultra Deep Field — milhares de galáxias no universo distante (NASA/ESA)</p>
+            </div>
+
+            <p>O universo é vasto, misterioso e incrivelmente belo. Vamos continuar explorando juntos!</p>
+        </main>
+    </div>
 </body>
 </html>
